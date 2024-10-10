@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Info App</title>
+  <link rel="stylesheet" href="app.css">
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  
+  <script type="text/babel">
+    function MyApp() {
+      return (
+        <div>
+          <h1>Моя інформація</h1>
+          <p>ПІБ: Іван Іванов</p>
+          <p>Телефон: +380 12 345 6789</p>
+          <p>Email: example@gmail.com</p>
+        </div>
+      );
+    }
+
+    const container = document.getElementById('root');
+    const root = ReactDOM.createRoot(container);
+    root.render(<MyApp />);
+  </script>
+</body>
+</html>
